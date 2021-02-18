@@ -6,7 +6,7 @@ import './styles.css'
 
 const MainCarousel=() => {
     return (
-        <div id="home">
+        <div id="home" className="carousel">
             <Carousel controls={false} indicators interval={2500} pause={false}>
                 <Carousel.Item>
                     <img

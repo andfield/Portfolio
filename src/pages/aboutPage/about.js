@@ -12,7 +12,7 @@ const About=() => {
     return (
         <div id="about">
             <div className="about">
-                <h1 className="pt-3 text-center font-details pb-3">A little About me</h1>
+                <h1 className="pt-3 text-center font-details pb-3 text-black">A little About me</h1>
                 <Container>
                     <Row className="pt-3 pb-5 align-items-center">
                         {/* Profile Image */}
@@ -26,14 +26,14 @@ const About=() => {
                             <Row className=" align-items-start p-2 my-details rounded">
                                 {/* About me description */}
                                 Hello fellow tech enthusiasts! I am <strong>&nbsp;Siddharth Thakur</strong>
-                                <br />Full stack software developer based in Wellington region, specializing in JavaScript and currently exploring the NERDS stack
-                                <br />(Node.js, Express, React, Database using SQL, Mongo )
-                                <br /><br />My journey in tech began way back in 2015 by writing a script to automate downloading pirated games.I further realized
+                                <br/>Full stack software developer based in Wellington region, specializing in JavaScript and currently exploring the NERDS stack
+                                <br/>( Node.js, Express, React, Database using SQL, Mongo )
+                                <br/><br/>My journey in tech began way back in 2015 by writing a script to automate downloading pirated games.I further realized
                                             that I could automate other day to day tasks and save people from tedious and error-prone activities.
-                                <br /><br />Relocating to New Zealand was the perfect opportunity to start my career in IT. I thought the fastest way to
+                                <br/><br/>Relocating to New Zealand was the perfect opportunity to start my career in IT. I thought the fastest way to
                                             get started as a developer was to graduate from WelTec with Bachelor's in IT.
-                                <br /><br />I love learning new things, flex my creativity, strong tech culture and even stronger coffee.
-                                <br /><br />
+                                <br/><br/>I love learning new things, flex my creativity, strong tech culture and even stronger coffee.
+                                <br/><br/>
 
                                 {/* About me Buttons */}
                                 <Col className="d-flex justify-content-center flex-wrap">
