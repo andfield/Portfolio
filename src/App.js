@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/NavBar/navbar'
 import MainCarousel from './components/Carousel/Caruosel'
 import Title from './components/StyledHeading/title'
+import About from './pages/aboutPage/about'
 
 const App=() => {
   return (
@@ -11,7 +12,7 @@ const App=() => {
     <MainCarousel /> 
       <Title />
       <Navbar /> 
-
+      <About />
     </div>
   )
 }
