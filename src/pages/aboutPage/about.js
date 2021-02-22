@@ -10,7 +10,7 @@ const About=() => {
     const github="https://github.com/andfield"
 
     return (
-        <div id="about">
+        <div id="About">
             <div className="about">
                 <h1 className="pt-3 text-center font-details pb-3 text-black">A little About me</h1>
                 <Container>
