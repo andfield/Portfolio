@@ -8,7 +8,9 @@ import Skills from './pages/skillsPage/skills.js'
 import Experience from './pages/expreriencePage/experience'
 import TimeLine from './pages/projectPage/TimeLine'
 import ContactForm from './pages/contactPage/contactForm'
+import Footer from './components/Footer/Footer'
 import aboutParallax from './assets/img/parallex/background.webp'
+
 import {Container} from 'react-bootstrap'
 import {Parallax} from 'react-parallax'
 import {Fade, Slide} from 'react-reveal'
@@ -19,10 +21,12 @@ const App=() => {
   return (
 
     <div className="App" style={{position: "relative"}}>
-      <MainCarousel />
+      {/* <MainCarousel /> */}
+      <div className="hero" />
+        
       <Title />
       <Navbar />
-      <div  >
+      <div style={{marginTop: '30px'}}>
         <Parallax
           blur={{min: -30, max: 30}}
           bgImage={aboutParallax}
@@ -69,10 +73,15 @@ const App=() => {
       {/* Contact form */}
       <Container className="container-box rounded">
         <Fade duration={500}>
-          <hr />
+        <hr style={{backgroundColor: "#ffe673"}} />
           <ContactForm />
         </Fade>
       </Container>
+
+      {/* Footer */}
+      <hr style={{backgroundColor: "#ffe673"}} />
+      <Footer />
+
     </div>
 
 

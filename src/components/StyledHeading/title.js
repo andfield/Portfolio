@@ -6,7 +6,7 @@ import {useDencrypt} from 'use-dencrypt-effect'
 const MyTitleMessage=styled.h1`
   position: absolute;
   width: 100%;
-  top: 22rem;
+  top: 28rem;
   z-index: 1;
   margin-top: -105px;
   text-align: center;

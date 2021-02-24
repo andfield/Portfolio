@@ -20,3 +20,12 @@ hr {
     height: 100%;
     z-index: 1;
   }
+
+  .hero{
+      content: url("./assets/img/background/wall.jpg");
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      display: block;
+  
+  }

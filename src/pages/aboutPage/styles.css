@@ -14,5 +14,5 @@
   .font-details {
     font-size: 3em;
     font-weight: 500;
-    color: black;
+    color: black !important ;
   }
