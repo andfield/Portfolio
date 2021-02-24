@@ -5,6 +5,7 @@ import MainCarousel from './components/Carousel/Caruosel'
 import Title from './components/StyledHeading/title'
 import About from './pages/aboutPage/about'
 import Skills from './pages/skillsPage/skills.js'
+import Experience from './pages/expreriencePage/experience'
 import aboutParallax from './assets/img/parallex/background.webp'
 import {Container} from 'react-bootstrap'
 import {Parallax} from 'react-parallax'
@@ -36,14 +37,27 @@ const App=() => {
           </div>
         </Parallax>
       </div>
+
       {/* Skills section */}
       <Container className="container-box rounded">
         <Slide bottom duration={500}>
-          <hr style={{backgroundColor: "#ffe673"}}/>
+          <hr style={{backgroundColor: "#ffe673"}} />
           <Skills />
         </Slide>
       </Container>
+
+      {/* Experience section */}
+      <div>
+        <Container className="container-box rounded">
+          <Fade duration={500}>
+          <hr style={{backgroundColor: "#ffe673"}} />
+            <Experience />
+          </Fade>
+        </Container>
+      </div>
     </div>
+
+
 
   )
 }

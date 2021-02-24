@@ -7,7 +7,7 @@ import {skills} from './skillsData.js'
 
 const Skills=() => {
     return (
-        <div className="pt-3 pb-3" id="Skills">
+        <div className="pt-3 pb-3 skill-container" id="Skills">
             <h1 className="text-center font-details-b pb-4">Dev Skills</h1>
             <CardDeck>
                 <Row className="d-flex justify-content-around" style={{width: '100%'}}>
