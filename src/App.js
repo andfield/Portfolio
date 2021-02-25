@@ -2,7 +2,7 @@ import React from 'react'
 import './App.css'
 import Navbar from './components/NavBar/navbar'
 import MainCarousel from './components/Carousel/Caruosel'
-import Title from './components/StyledHeading/title'
+import TitleMessage from './components/StyledHeading/title'
 import About from './pages/aboutPage/about'
 import Skills from './pages/skillsPage/skills.js'
 import Experience from './pages/expreriencePage/experience'
@@ -24,7 +24,7 @@ const App=() => {
       {/* <MainCarousel /> */}
       <div className="hero" id="home"/>
         
-      <Title />
+      <TitleMessage />
       <Navbar />
       <hr style={{backgroundColor: "#ffe673"}} />
       <div style={{marginTop: '30px'}}>

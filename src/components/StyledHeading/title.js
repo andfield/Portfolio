@@ -1,7 +1,7 @@
-import React, {useEffect} from 'react'
+
+import React from "react"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
-import {useDencrypt} from 'use-dencrypt-effect'
 
 const MyTitleMessage=styled.h1`
   position: absolute;
@@ -26,59 +26,53 @@ const MyTitleMessage=styled.h1`
       font-size: 37px;
       letter-spacing: 2px;
     }
-  }
-  @media only screen and (max-width: 540px){
-    strong {
-      font-size: 1.25em
-    }
-    div .main{
-      font-size: 1.25em
-    }
-  }
-`
-//Dencrypt values
-const values=["Programmer", "Web Developer", "Artist", "Learner"]
+    `
 
-const Title=() => {
+const TitleMessage=() => (
+  <MyTitleMessage>
+    <div className="titleMessage">
+      <div className="heading">
+        <div className="main text-center mb-3">
+          Hi, I am
+          <br />
+          <span>
+            <strong>Siddharth Thakur</strong>
+          </span>
+        </div>
+        <div className="sub">
+          <Typewriter
+            options= {{
+              autoStart: true,
+              loop: true
+            }}
+            onInit={(typewriter) => {
 
-  const {result, dencrypt}=useDencrypt()
+                typewriter
+              
+                  .pauseFor(500)
+                  .typeString('I am a FullStack JavaScript')
+                  .pauseFor(300)
+                  .deleteChars(10)
+                  .typeString('<span style="text-size:50px; color ; JS <span style="color: #27ae60;">web developer</span></strong>')
+                  .pauseFor(1000)
+                  .callFunction(() => {
 
-  useEffect(() => {
+                  })
+                  .pauseFor(2500)
+                  .deleteAll()
+                  .callFunction(() => {
+                    console.log('All strings were deleted')
+                  })
+                  .start()
 
-    let i=0
-
-    const action=setInterval(() => {
-
-      dencrypt(values[i])
-
-      i=i===values.length-1? 0:i+1
-    }, 3000)
-
-    return () => clearInterval(action)
-
-  }, [])
-
-  return (
-
-    <MyTitleMessage>
-      <div className="titleMessage">
-        <div className="heading">
-          <div className="main text-center mb-3">
-            Hi, I am
-              <br />
-            <span>
-              <strong>Siddharth Thakur</strong>
-            </span>
-          </div>
-          <div className="sub">
-            {result}
-          </div>
+              
+            }}
+          />
         </div>
       </div>
-    </MyTitleMessage>
+    </div>
+  </MyTitleMessage>
+)
 
-  )
+export default TitleMessage
 
-}
-
-export default Title
