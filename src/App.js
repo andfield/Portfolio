@@ -22,28 +22,23 @@ const App=() => {
 
     <div className="App" style={{position: "relative"}}>
       {/* <MainCarousel /> */}
-      <div className="hero" id="home"/>
-        
+      <div className="hero" id="home" />
+
       <TitleMessage />
       <Navbar />
       <hr style={{backgroundColor: "#ffe673"}} />
       <div style={{marginTop: '30px'}}>
-        <Parallax
-          blur={{min: -30, max: 30}}
-          bgImage={aboutParallax}
-          bgImageAlt=""
-          strength={-300}
-        >
-          
-          {/* About section */}
-          <div>
-            <Container className="container-box rounded">
-              <Fade top duration={500}>
-                <About />
-              </Fade>
-            </Container>
-          </div>
-        </Parallax>
+
+
+        {/* About section */}
+        <div>
+          <Container className="container-box rounded">
+            <Fade top duration={500}>
+              <About />
+            </Fade>
+          </Container>
+        </div>
+
       </div>
 
       {/* Skills section */}
@@ -77,7 +72,7 @@ const App=() => {
       {/* Contact form */}
       <Container className="container-box rounded">
         <Fade duration={500}>
-        <hr style={{backgroundColor: "#ffe673"}} />
+          <hr style={{backgroundColor: "#ffe673"}} />
           <ContactForm />
         </Fade>
       </Container>

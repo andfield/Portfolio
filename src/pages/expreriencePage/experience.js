@@ -13,7 +13,7 @@ const Experience=() => {
                 <Container >
                     <Tilt options={{max: 25}} className="tilt">
                         <Card>
-                            <Card.Header as="h5" className="d-flex justify-content-center flex-wrap">
+                            <Card.Header as="h5" className="d-flex al flex-wrap">
                                 <Card.Img variant="top" className="img-resize" src={spark} alt="Spark logo" />
                             </Card.Header>
                             <Card.Body className="d-flex justify-content-center flex-column">

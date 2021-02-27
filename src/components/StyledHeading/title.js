@@ -2,11 +2,12 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
+import {Fade, Slide} from 'react-reveal'
 
 const MyTitleMessage=styled.h1`
   position: absolute;
   width: 100%;
-  top: 28rem;
+  top: 25rem;
   z-index: 1;
   margin-top: -105px;
   text-align: center;
@@ -26,6 +27,10 @@ const MyTitleMessage=styled.h1`
       font-size: 37px;
       letter-spacing: 2px;
     }
+
+    .name{
+      font-size: 2em;
+    }
     `
 
 const TitleMessage=() => (
@@ -33,39 +38,46 @@ const TitleMessage=() => (
     <div className="titleMessage">
       <div className="heading">
         <div className="main text-center mb-3">
-          Hi, I am
-          <br />
+          <Fade className="text-center" left> Hi, I am</Fade>
+
           <span>
-            <strong>Siddharth Thakur</strong>
+            <Fade right >
+              <h1 className="name">
+                Siddharth Thakur
+              </h1>
+            </Fade>
+
           </span>
+
         </div>
+        <br />
         <div className="sub">
           <Typewriter
-            options= {{
+            options={{
               autoStart: true,
               loop: true
             }}
             onInit={(typewriter) => {
 
-                typewriter
-              
-                  .pauseFor(500)
-                  .typeString('I am a FullStack JavaScript')
-                  .pauseFor(300)
-                  .deleteChars(10)
-                  .typeString('<span style="text-size:50px; color ; JS <span style="color: #27ae60;">web developer</span></strong>')
-                  .pauseFor(1000)
-                  .callFunction(() => {
+              typewriter
 
-                  })
-                  .pauseFor(2500)
-                  .deleteAll()
-                  .callFunction(() => {
-                    console.log('All strings were deleted')
-                  })
-                  .start()
+                .pauseFor(500)
+                .typeString('A FullStack JavaScript')
+                .pauseFor(300)
+                .deleteChars(10)
+                .typeString('<strong style="color:#d60068; text-size: 70px;"> JS </strong> <span>web developer</span></strong>')
+                .pauseFor(1000)
+                .callFunction(() => {
 
-              
+                })
+                .pauseFor(2500)
+                .deleteAll()
+                .callFunction(() => {
+                  console.log('All strings were deleted')
+                })
+                .start()
+
+
             }}
           />
         </div>
