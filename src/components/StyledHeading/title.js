@@ -5,6 +5,27 @@ import styled from "styled-components"
 import {Fade, Slide} from 'react-reveal'
 
 const MyTitleMessage=styled.h1`
+
+  @media only screen and (max-width: 540px ){
+    
+    .main {
+      font-size: 0.8em !important;
+      margin-bottom: -25px !important;
+    }
+    .name{
+      font-size: 1.5em !important
+    }
+    .sub {
+      font-size: 0.4em !important;
+    }
+    .sub-a{
+      font-size: 0.6em !important;
+    }
+
+    top: 20rem
+
+  }
+
   position: absolute;
   width: 100%;
   top: 25rem;
@@ -37,8 +58,8 @@ const TitleMessage=() => (
   <MyTitleMessage>
     <div className="titleMessage">
       <div className="heading">
-        <div className="main text-center mb-3">
-          <Fade className="text-center" left> Hi, I am</Fade>
+        <div className="main text-center">
+          <Fade className="text-center sub-a" left> Hi, I am</Fade>
 
           <span>
             <Fade right >
@@ -65,7 +86,7 @@ const TitleMessage=() => (
                 .typeString('A FullStack JavaScript')
                 .pauseFor(300)
                 .deleteChars(10)
-                .typeString('<strong style="color:#d60068; text-size: 70px;"> JS </strong> <span>web developer</span></strong>')
+                .typeString('<strong style="color:#d60068; text-size: 40px;"> JS </strong> <span>developer</span></strong>')
                 .pauseFor(1000)
                 .callFunction(() => {
 

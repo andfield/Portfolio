@@ -30,3 +30,27 @@ hr {
   
   }
 
+  #About{
+    color: rgb(248, 231, 200);
+    box-shadow: 0 4px 8px 0 rgba(207, 198, 72, 0.63), 0 6px 20px 0 rgba(248, 194, 76, 0.144);
+  }
+
+
+  #Skills{
+    box-shadow: 0 4px 8px 0 rgba(207, 198, 72, 0.63), 0 6px 20px 0 rgba(248, 194, 76, 0.144);
+  }
+
+  #Experience{
+    box-shadow: 0 4px 8px 0 rgba(207, 198, 72, 0.63), 0 6px 20px 0 rgba(248, 194, 76, 0.144);
+  }
+  #Contact{
+    box-shadow: 0 4px 8px 0 rgba(207, 198, 72, 0.63), 0 6px 20px 0 rgba(248, 194, 76, 0.144);
+  }
+
+  @media only screen and (max-width: 540px){
+
+    .container-box{
+      width: 100%;
+    }
+
+  }
