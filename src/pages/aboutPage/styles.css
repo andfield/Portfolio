@@ -119,7 +119,8 @@
     .myImg{
     
       max-height: 500px !important;
-      background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.774) 50%, rgba(0, 0, 0, 0.561) 75%, rgba(0,0,0,0.2) 100%);     
+      background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgb(0, 0, 0) 25%, rgba(0, 0, 0, 0.774) 50%, rgba(0, 0, 0, 0.561) 75%, rgba(0,0,0,0.2) 100%);   
+      margin-right: 25px;  
     }
 
     .my-details {
