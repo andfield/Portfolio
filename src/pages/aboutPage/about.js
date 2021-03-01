@@ -43,7 +43,7 @@ const About=() => {
                                     <div>
                                         <a href="#Contact">
                                             <Button className="m-2 mobile-button" variant="outline-dark">
-                                                <i className="fas fa-angle-right" style={{marginRight: '0px'}}></i>
+                                                <i className="fas fa-angle-right icon" style={{marginRight: '0px'}}></i>
                                                 Let's Chat
                                             </Button>
                                         </a>
@@ -51,7 +51,7 @@ const About=() => {
                                     <div>
                                         <a href={resume} target="_blank" rel="noopener noreferrer">
                                             <Button className="m-2 mobile-button" variant="outline-dark">
-                                                <i className="fas fa-angle-right" style={{marginRight: '0px'}}></i>
+                                                <i className="fas fa-angle-right icon" style={{marginRight: '0px'}}></i>
                                                 My Resume
                                             </Button>
                                         </a>

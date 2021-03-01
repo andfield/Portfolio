@@ -8,16 +8,17 @@ const Experience=() => {
 
     return (
         <div id="Experience">
+            <div className="exp">
             <h1 className="pt-3 text-center font-details-b pb-3">Current Work</h1>
             <Jumbotron className="jumbo-style">
                 <Container >
                     <Tilt options={{max: 25}} className="tilt">
-                        <Card>
+                        <Card className="card">
                             <Card.Header as="h5" className="d-flex al flex-wrap">
                                 <Card.Img variant="top" className="img-resize" src={spark} alt="Spark logo" />
                             </Card.Header>
                             <Card.Body className="d-flex justify-content-center flex-column">
-                                <div>
+                                <div className="it">
                                     <Card.Title className="text-center">Information Technology Auditor</Card.Title>
                                 </div>
                                 <div>
@@ -47,6 +48,7 @@ const Experience=() => {
                     </Tilt>
                 </Container>
             </Jumbotron>
+            </div>
         </div>
     )
 

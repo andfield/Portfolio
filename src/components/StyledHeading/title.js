@@ -6,6 +6,26 @@ import {Fade, Slide} from 'react-reveal'
 
 const MyTitleMessage=styled.h1`
 
+@media only screen and (min-width: 540px) and (max-width: 980px){
+    
+  .main {
+    font-size: 1.2em !important;
+    margin-bottom: -25px !important;
+  }
+  .name{
+    font-size: 1.5em !important
+  }
+  .sub {
+    font-size: 0.8em !important;
+    text-shadow: 2px 2px 4px white;
+  }
+  .sub-a{
+    font-size: 0.6em !important;
+  }
+
+  top: 20rem
+}
+
   @media only screen and (max-width: 540px ){
     
     .main {
@@ -16,7 +36,8 @@ const MyTitleMessage=styled.h1`
       font-size: 1.5em !important
     }
     .sub {
-      font-size: 0.4em !important;
+      font-size: 0.5em !important;
+      text-shadow: 2px 2px 4px white;
     }
     .sub-a{
       font-size: 0.6em !important;

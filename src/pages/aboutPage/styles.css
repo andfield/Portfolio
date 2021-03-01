@@ -26,7 +26,7 @@
     color: #ffffff;
   }
 
-  i {
+  .icon {
     animation: blink 2s steps(10, start) infinite;
     -webkit-animation: blink 2s steps(10, start) infinite;
     padding: 0.3em;

@@ -7,7 +7,7 @@ import './styles.css'
 const NavBar=() => {
     return (
         <div>
-            <Navbar fixed="top" expand="md" variant="dark" className="animate-navbar nav-theme justify-content-between">
+            <Navbar fixed="top" expand="md" variant="dark" className="animate-navbar nav-theme justify-content-between nav">
                 {/* Brand Logo */}
                 <div>
                     <Navbar.Brand href="#home">

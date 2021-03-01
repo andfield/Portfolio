@@ -22,7 +22,9 @@ const App=() => {
 
     <div className="App" style={{position: "relative"}}>
       {/* <MainCarousel /> */}
+
       <div className="hero" id="home" />
+
 
       <TitleMessage />
       <Navbar />

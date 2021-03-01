@@ -26,8 +26,13 @@ img {
       .ml-auto{
         margin-left: 45% !important
       }
+      .nav{
+        max-height: 4em;
+      }
   }
 
   .ml-auto{
     color: #f7fc66;
   }
+
+  
