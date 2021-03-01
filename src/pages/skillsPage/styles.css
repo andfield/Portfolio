@@ -1,16 +1,30 @@
+@media only screen and (max-width: 540px){
+
+  p{
+    font-size: 13px;
+    text-align: center;
+  }
+
+}
 
 .focus {
     transition: transform 0.3s;
     width: 100%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.787) 0%, rgba(0, 0, 0, 0.39) 25%, rgba(0, 0, 0, 0.301) 50%, rgba(0, 0, 0, 0.561) 75%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 20px;
+    color: wheat;
   }
   
-  .focus:hover {
-    transform: scale(1.05);
+  .focus:hover, .focus:hover:active {
+    transform: scale(1.01);
   }
   
   .card-title {
     font-size: 2em;
     font-weight: 700;
+  }
+  p{
+    text-align: center;
   }
   
   .image-style {
@@ -27,6 +41,19 @@
     font-size: 3em;
     font-weight: 500;
     color: #ffffff;
+  }
+
+  .skill-box{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .row{
+    background: linear-gradient(0deg, rgba(0,0,0,0.4066001400560224) 0%, rgba(0,0,0,0.7595413165266106) 100%);
+  }
+
+  .card-text{
+    align-content: center;
   }
 
   .skill-container{

@@ -174,7 +174,7 @@ export const skills={
             link: "https://www.postgresql.org/",
             imgAltText: "PostgreSQL",
             imgSrc: postgre,
-            skillName: "PostgreSQL",
+            skillName: "Postgre",
         },
         {
             link: "https://www.microsoft.com/en-us/sql-server/sql-server-2019",
@@ -186,7 +186,7 @@ export const skills={
             link: "https://www.mongodb.com/",
             imgAltText: "MongoDB",
             imgSrc: mongodb,
-            skillName: "MongoDB",
+            skillName: "Mongo",
         },
         {
             link: 'https://firebase.google.com/docs/database',
