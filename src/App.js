@@ -6,7 +6,7 @@ import TitleMessage from './components/StyledHeading/title'
 import About from './pages/aboutPage/about'
 import Skills from './pages/skillsPage/skills.js'
 import Experience from './pages/expreriencePage/experience'
-import TimeLine from './pages/projectPage/TimeLine'
+
 import ContactForm from './pages/contactPage/contactForm'
 import Footer from './components/Footer/Footer'
 import aboutParallax from './assets/img/parallex/background.webp'
@@ -14,6 +14,7 @@ import aboutParallax from './assets/img/parallex/background.webp'
 import {Container} from 'react-bootstrap'
 import {Parallax} from 'react-parallax'
 import {Fade, Slide} from 'react-reveal'
+import ProjectPage from './pages/projectPage/TimeLine'
 
 
 
@@ -63,13 +64,14 @@ const App=() => {
         </Container>
       </div>
 
-      {/* Projects Timeline */}
+      {/* Projects Timeline  */}
       <Container className="container-box rounded">
         <Slide bottom duration={500}>
           <hr style={{backgroundColor: "#ffe673"}} />
-          <TimeLine />
+          <ProjectPage />
         </Slide>
       </Container>
+
 
       {/* Contact form */}
       <Container className="container-box rounded">
