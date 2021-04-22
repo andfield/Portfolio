@@ -16,6 +16,7 @@ img {
   @keyframes moveDown {
     from {
       transform: translateY(-5rem);
+
     }
     to {
       transform: translateY(0rem);
@@ -24,15 +25,18 @@ img {
 
   @media only screen and (max-width: 769px){
       .ml-auto{
-        margin-left: 45% !important
-      }
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 2px;
+        background: linear-gradient(
+          0deg
+          , rgba(0, 0, 0, 0.808) 0%, rgb(0, 0, 0) 100%)
+        
+        }
       .nav{
         max-height: 4em;
       }
-  }
-
-  .ml-auto{
-    color: #f7fc66;
   }
 
   
