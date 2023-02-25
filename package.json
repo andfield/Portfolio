@@ -5,5 +5,18 @@
   "main": "index.ts",
   "repository": "git@github.com:andfield/Portfolio.git",
   "author": "<siddharththakur76@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/styled-components": "^5.1.26",
+    "esbuild": "^0.17.10",
+    "lite-server": "^2.6.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
+  }
 }
